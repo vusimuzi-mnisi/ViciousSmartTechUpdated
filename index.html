@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vicious Smart Tech Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Vicious Smart Tech</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Gadgets for the Modern Maverick</h1>
+            <p>Explore our latest collection of futuristic tech electronics and gadgets</p>
+            <a href="#products" class="heroBtn">Explore Products</a>
+        </div>
+    </section>
+
+    <section id="products" class="products-section">
+        <h2>Our Products</h2>
+        <input type="text" id="search-bar" placeholder="Search products...">
+
+        <div class="filter-buttons">
+            <button onclick="filterProducts('')">All</button>
+            <button onclick="filterProducts('kitchen')">Kitchen</button>
+            <button onclick="filterProducts('cleaning')">Cleaning</button>
+            <button onclick="filterProducts('entertainment')">Entertainment</button>
+            <button onclick="filterProducts('security')">Security</button>
+        </div>
+        
+        <div class="product-grid">
+            
+            <div class="product" data-category="cleaning">
+                <img src="images/smart vacuum2.jpg" alt="vacuum">
+                <h3>Xiaomi Robot Vacuum S10</h3>
+                <p>R6299.00</p>
+                <a href="vacuum.html" class="button">Buy Now</a>
+            </div>
+            
+            <div class="product" data-category="entertainment">
+                <img src="images/smart speaker.jfif" alt="speaker">
+                <h3>Xiaomi Mi Smart Speaker</h3>
+                <p>R1099.00</p>
+                <a href="speaker.html" class="button">Buy Now</a>
+            </div>
+            <div class="product" data-category="kitchen">
+                <img src="images/smart air fryrer.jfif" alt="fryer">
+                <h3>Xiaomi Smart Air Fryer 3.5L</h3>
+                <p>R2499.00</p>
+                <a href="airfryer.html" class="button">Buy Now</a>
+            </div>
+            <div class="product" data-category="security">
+                <img src="images/smart camera.jpg" alt="cam">
+                <h3>Xiaomi Smart Camera C200</h3>
+                <p>R799.00</p>
+                <a href="camera.html" class="button">Buy Now</a>
+            </div>
+            <div class="product" data-category="kitchen">
+                <img src="images/smart fridge.jfif" alt="Fridge">
+                <h3>Hisense 536L Four Door Water Dispenser Fridge Black H750FSBIDS</h3>
+                <p>R69999.00</p>
+                <a href="fridge.html" class="button">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <a href="#" class="button">Send Message</a>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Coded with P by Vicious</p>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
